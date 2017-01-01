@@ -18,7 +18,7 @@ email: beNice17@vietanhdev.com
 author: Viet Anh Nguyen
 description: > # this means to ignore newlines until "baseurl:"
   A minimal theme for personal website
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/beNice17" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 
