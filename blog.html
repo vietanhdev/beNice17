@@ -12,7 +12,7 @@ permalink: /blog/
 <h2>Lastest posts</h2>
 
 {% for post in site.posts limit:5 %}  
-    <p>&gt;&gt; <span style="font-size: 18px; font-weight: bold;"><a href="{{ post.url }}">{{ post.title }}</a></span></p>
+    <p>&gt;&gt; <span style="font-size: 18px; font-weight: bold;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span></p>
 {% endfor %}
 
 
