@@ -38,7 +38,7 @@ menu:
 
 
 # Sharing settings
-shareimg: https://vietanhdev.com/assets/images/sharing-imgs/beNice17.jpg # default sharing img
+shareimg: https://vietanhdev.com/beNice17/assets/images/sharing-imgs/beNice17.jpg # default sharing img
 bigimg: images/patterns/triangular.png # default big img (header image(s))
 fb_app_id: 12345 # Facebook app id
 
