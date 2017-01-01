@@ -43,7 +43,7 @@ bigimg: images/patterns/triangular.png # default big img (header image(s))
 fb_app_id: 12345 # Facebook app id
 
 timezone: "+0700"
-permalink: /posts/:title.html
+permalink: posts/:title.html
 
 # Build settings
 markdown: kramdown
