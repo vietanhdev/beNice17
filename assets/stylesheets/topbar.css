@@ -3,7 +3,7 @@
 /*Topbar style*/
 #top-bar {
     padding: 2px 5px;
-    background: #F5F5F5;
+    background: rgba(0, 0, 0, 0.1);
     height: 36px;
     line-height: 36px;
     color: gray;
