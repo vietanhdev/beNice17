@@ -29,10 +29,8 @@ js:
 	<p verlang="vi">Tôi là Việt Anh. Tôi đang là sinh viên, yêu lập trình, thích tìm hiểu các công nghệ mới. Hiện tại tôi đang tập trung vào phát triển và quản lí các Website và các phần mềm dựa trên nền tảng Web.</p>
 	<p verlang="vi">Tôi tạo Website này như là nơi tôi chia sẻ các kiến thức, kinh nghiệm đã thu được trong học tập, công việc và cuộc sống. Rất vui được làm quen với tất cả mọi người!</p>
 
-
 	<h2 verlang="en">Contact Info</h2>
 	<h2 verlang="vi">Thông tin liên hệ</h2>
-	<br>
 	<i class="fa fa-github fa-lg" aria-hidden="true"></i>
 	<b>Github:</b> <a href="https://github.com/vietanhdev">https://github.com/vietanhdev</a><br><br>
 
@@ -42,6 +40,12 @@ js:
 	<i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
 	<b>Facebook:</b> <a href="https://fb.com/vietanhdev">fb.com/vietanhdev</a>
 </div>
+
+<h2>Lastest posts on my blog</h2>
+
+{% for post in site.posts limit:5 %}  
+    <p>&gt;&gt; <span style="font-size: 18px; font-weight: bold;"><a href="{{ post.url }}">{{ post.title }}</a></span></p>
+{% endfor %}
 
 <!-- For the animated blinking cursor typed.js -->
 <style type="text/css">

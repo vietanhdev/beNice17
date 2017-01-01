@@ -12,7 +12,9 @@ subtitle: Some work I've done
 		border: 2px solid grey;
 		background: rgba(250,250,250,0.9);
 		margin: 2px;
-		padding: 2px;
+	}
+	.caption {
+		padding: 10px;
 	}
 	.project .thumbnail {
 		max-height: 300px;

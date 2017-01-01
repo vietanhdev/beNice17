@@ -6,9 +6,9 @@ js: "assets/scripts/contact-page.js"
 ---
 
 <style>
-	#contact-form input, #contact-form textarea,#contact-form button {
-	width: 100%;
-	clear: both;
+	#contact-form input, #contact-form textarea {
+		width: 100%;
+		clear: both;
 	}
 	#contact-form input, #contact-form textarea {
 		margin-top: 5px;
@@ -23,8 +23,8 @@ js: "assets/scripts/contact-page.js"
 
 <form id="contact-form" method="POST" action="https://formspree.io/contactform@vietanhdev.com">
   <input type="text" name="_gotcha" style="display:none" />
-  <input type="email" class="form-control input-lg" name="email" placeholder="Email">
-  <input type="text" class="form-control input-lg" name="website" placeholder="Your name / Tên bạn">
-  <textarea class="form-control input-lg" row="3" name="message" placeholder="Message / Nội dung tin nhắn"></textarea>
+  <input type="email" name="email" placeholder="Email">
+  <input type="text" name="website" placeholder="Your name / Tên bạn">
+  <textarea name="message" placeholder="Message / Nội dung tin nhắn"></textarea>
   <input type="submit" class="btn btn-lg btn-primary" value="Send / Gửi đi"></input>
 </form>

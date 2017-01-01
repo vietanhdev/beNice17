@@ -5,6 +5,7 @@ ext-css:
     - "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
 js:
     - "assets/scripts/main.js"
+    - "assets/scripts/return-to-top.js"
 ext-js:
     - "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"
 ---
@@ -15,6 +16,7 @@ ext-js:
         {% include head/topbar.html %}
         {{ content }}
         {% include foot/footer.html %}
+        {% include return-to-top.html %}
     </body>
     {% include foot/scripts.html %}
 </html>

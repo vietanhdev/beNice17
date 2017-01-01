@@ -18,6 +18,9 @@ a {
 img {
     max-width: 100%;
 }
+input, textarea {
+    padding: 10px;
+}
 
 footer {
     margin-top: 50px;
