@@ -1,0 +1,141 @@
+* {
+	padding: 0; margin: 0;
+	box-sizing: border-box;
+	position: relative;
+	font-family: Arial;
+}
+body {
+	background: url("img/wood.png");
+}
+header {
+	background: #403123;
+	padding: 20px;
+	border-bottom: 1px solid #C2D2D2;
+	color: #fff;
+}
+header h1 {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	color: rgba(255,255,255,1);
+	-o-text-overflow: ellipsis;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.91) ;
+}
+header a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+}
+#container {
+	padding: 5px;
+	width: 100%;
+	max-width: 600px;
+	margin: 10px auto;
+	background: #E5B27E;
+	border: 1px solid #7F4F2A;
+}
+#setup{
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+#dora-talking{
+	padding: 10px;
+}
+#dora-talking:after {
+	position: relative;
+    clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+#dora-avt{
+	float: left;
+	padding: 6px;
+	width: 20%;
+	max-width: 100px;
+	border-radius: 50%;
+	border: 5px solid #7F6346;
+}
+#talking{
+	float: left;
+	padding: 10px 10px 10px 20px;
+	width: 80%;
+	max-width: 700px;
+	font-size: 0.8em;
+	color: #403123;
+	border-radius: 4px;
+}
+#board{
+	overflow: auto;
+}
+#board-table{
+	width: 100%;
+	border: 1px solid #7F6346;
+	min-width: 500px;
+	table-layout:fixed; 
+}
+.square{
+	width: 6.25%;
+	padding: 2px;
+	border: 1px solid #7F6346;
+	cursor: pointer;
+	overflow:hidden;
+}
+.square:before{
+    content:'';
+    float: left;
+	padding-top:100%;
+}
+.square img{
+	width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.btn1 {
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #D4A475;
+	border: 2px solid #7F4F2A;
+	border-radius: 5px;
+	color: #7F4F2A;
+}
+.btn-med {
+	padding: 10px;
+}
+
+#board-cpanel{
+	margin-top: 10px;
+	padding: 10px;
+	z-index: 100;
+	background-color: #BF9469;
+	border-radius: 5px;
+}	
+
+footer{
+	margin-top: 100px;
+	margin-bottom: 20px;
+	clear: both;
+	width: 100%;
+}
+footer a {
+	text-decoration: none;
+	color: #362A1D;
+}
+
+
+@media all and (min-width: 768px){
+	#talking{
+		font-size: 1em;
+	}
+}
+@media all and (min-width: 900px){
+	#talking{
+		font-size: 1.2em;
+	}
+}

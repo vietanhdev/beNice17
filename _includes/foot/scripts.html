@@ -1,0 +1,11 @@
+{% if layout.js %}
+{% for js in layout.js %}
+    <script src="{{ js }}"></script>
+{% endfor %}
+{% endif %}
+
+{% if page.js %}
+{% for js in page.js %}
+    <script src="{{ js }}"></script>
+{% endfor %}
+{% endif %}

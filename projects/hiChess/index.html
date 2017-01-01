@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hichess by Viet Anh</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<script type="text/javascript" src="jquery/jquery-2.1.4.js"></script>
+	<!--<script type="text/javascript" src="image-picker/image-picker.js"></script> -->
+	<!-- <link rel="stylesheet" type="text/css" href="image-picker/image-picker.css"> -->
+	<script type="text/javascript" src="js/ai_engine/engine1.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	
+</head>
+
+<body>
+
+<header>
+	<img id="logo" src="img/hichess-ori.png"/>
+	<img id="settings" class="buttontop" src="img/settings.png">
+	<button id="login" class="buttontop">Đăng nhập</button>
+	<button id="register" class="buttontop">Đăng kí</button>
+</header>
+
+<div class="container">
+	<div id="left-area" class="full-width">
+		<div id="oppo-info" class="title-bar">
+				<span id="oppo1-name">Warren</span>
+				<img id="oppo1-avartar" class="oppo" src="img/oppo-warren.png">
+				<span>vs.</span>
+				<img id="oppo2-avartar" class="oppo" src="img/oppo-mark.png">
+				<span id="oppo2-name">Mark</span>
+		</div>
+		<div class="content-area">
+			<div id="board-area-wrapper" class="side-bar full-width"> <!-- board-area-wrapper -->
+				<div id="chessboard-wrapper"><!-- Chess Board -->
+					<table id="chessboard">
+							<tbody>
+								<tr>
+									<td onclick="V(21)" id="21">♜</td>
+									<td onclick="V(22)" id="22">♞</td>
+									<td onclick="V(23)" id="23">♝</td>
+									<td onclick="V(24)" id="24">♛</td>
+									<td onclick="V(25)" id="25">♚</td>
+									<td onclick="V(26)" id="26">♝</td>
+									<td onclick="V(27)" id="27">♞</td>
+									<td onclick="V(28)" id="28">♜</td>
+								</tr>
+								<tr>
+									<td onclick="V(31)" id="31">♟</td>
+									<td onclick="V(32)" id="32">♟</td>
+									<td onclick="V(33)" id="33">♟</td>
+									<td onclick="V(34)" id="34">♟</td>
+									<td onclick="V(35)" id="35">♟</td>
+									<td onclick="V(36)" id="36">♟</td>
+									<td onclick="V(37)" id="37">♟</td>
+									<td onclick="V(38)" id="38">♟</td>
+								</tr>
+								<tr>
+									<td onclick="V(41)" id="41">&nbsp;</td>
+									<td onclick="V(42)" id="42">&nbsp;</td>
+									<td onclick="V(43)" id="43">&nbsp;</td>
+									<td onclick="V(44)" id="44">&nbsp;</td>
+									<td onclick="V(45)" id="45">&nbsp;</td>
+									<td onclick="V(46)" id="46">&nbsp;</td>
+									<td onclick="V(47)" id="47">&nbsp;</td>
+									<td onclick="V(48)" id="48">&nbsp;</td>
+								</tr>
+								<tr>
+									<td onclick="V(51)" id="51">&nbsp;</td>
+									<td onclick="V(52)" id="52">&nbsp;</td>
+									<td onclick="V(53)" id="53">&nbsp;</td>
+									<td onclick="V(54)" id="54">&nbsp;</td>
+									<td onclick="V(55)" id="55">&nbsp;</td>
+									<td onclick="V(56)" id="56">&nbsp;</td>
+									<td onclick="V(57)" id="57">&nbsp;</td>
+									<td onclick="V(58)" id="58">&nbsp;</td>
+								</tr>
+								<tr>
+									<td onclick="V(61)" id="61">&nbsp;</td>
+									<td onclick="V(62)" id="62">&nbsp;</td>
+									<td onclick="V(63)" id="63">&nbsp;</td>
+									<td onclick="V(64)" id="64">&nbsp;</td>
+									<td onclick="V(65)" id="65">&nbsp;</td>
+									<td onclick="V(66)" id="66">&nbsp;</td>
+									<td onclick="V(67)" id="67">&nbsp;</td>
+									<td onclick="V(68)" id="68">&nbsp;</td>
+								</tr>
+								<tr>
+									<td onclick="V(71)" id="71">&nbsp;</td>
+									<td onclick="V(72)" id="72">&nbsp;</td>
+									<td onclick="V(73)" id="73">&nbsp;</td>
+									<td onclick="V(74)" id="74">&nbsp;</td>
+									<td onclick="V(75)" id="75">&nbsp;</td>
+									<td onclick="V(76)" id="76">&nbsp;</td>
+									<td onclick="V(77)" id="77">&nbsp;</td>
+									<td onclick="V(78)" id="78">&nbsp;</td>
+								</tr>
+								<tr>
+									<td onclick="V(81)" id="81">♙</td>
+									<td onclick="V(82)" id="82">♙</td>
+									<td onclick="V(83)" id="83">♙</td>
+									<td onclick="V(84)" id="84">♙</td>
+									<td onclick="V(85)" id="85">♙</td>
+									<td onclick="V(86)" id="86">♙</td>
+									<td onclick="V(87)" id="87">♙</td>
+									<td onclick="V(88)" id="88">♙</td>
+								</tr>
+								<tr>
+									<td onclick="V(91)" id="91">♖</td>
+									<td onclick="V(92)" id="92">♘</td>
+									<td onclick="V(93)" id="93">♗</td>
+									<td onclick="V(94)" id="94">♕</td>
+									<td onclick="V(95)" id="95">♔</td>
+									<td onclick="V(96)" id="96">♗</td>
+									<td onclick="V(97)" id="97">♘</td>
+									<td onclick="V(98)" id="98">♖</td>
+								</tr>
+							</tbody>
+					</table>
+				</div><!-- End of Chess Board -->
+				<div class="side-bar float-left"> <!-- Chat Box -->
+						<div id="chatbox-title" class="title-bar"><h2>chat với đối thủ</h2></div>
+						<div class="content-area">
+							<div id="chatbox"></div>
+							<input id="message" type="text" placeholder="Enter để gửi">
+							<button id="send-chat" class="buttonc" type="submit">gửi</button>
+						</div>
+				</div> <!-- Chat Box -->
+			</div> <!-- board-area-wrapper -->
+			<div id="board-panel" class="side-bar full-width"> <!-- board-panel -->
+				<div id="chess-clock" class="side-bar float-left"> <!-- Chess Clock -->
+						<div id="chess-clock-title" class="title-bar"><h2>thời gian</h2></div>
+						<div class="content-area">
+							<table id="time-board" class="full-width">
+								<tbody>
+									<tr>
+										<td id="oppo1time"><p>18:34</p></td>
+										<td id="oppo2time"><p>17:56</p></td>
+									</tr>
+								</tbody>
+							</table>	
+						</div>
+				</div><!-- Chess Clock -->
+				<div class="side-bar float-left"> <!-- Chess Control Panel -->
+						<div id="game-control-title" class="title-bar"><h2>thao tác ván đấu</h2></div>
+						<div class="content-area">
+							<div>
+								<button class="buttonc full-width" value="Xin Đi Lại">Xin đi lại</button>
+								<button class="buttonc full-width" value="Nghị Hoà">Nghị Hoà</button>
+								<button class="buttonc full-width" value="Chịu Thua">Chịu Thua
+								</button>
+							</div>
+						</div>
+				</div> <!-- Chess Control Panel -->
+				<div id="history" class="side-bar float-left"> <!-- Moving history -->
+						<div id="history-title" class="title-bar"><h2>biên bản cờ</h2></div>
+						<div id="move-area" class="content-area full-width">
+							<table id="move-table" class="full-width">
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>e4</td>
+										<td>c6</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Bc4</td>
+										<td>d6</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Nf3</td>
+										<td>Nf6</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>Bb3</td>
+										<td>Nxe4</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>d3</td>
+										<td>Nc5</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>0-0</td>
+										<td>e5</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>Nc3</td>
+										<td>b5</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>d4</td>
+										<td>Nxb3</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>dxe5</td>
+										<td>Nxa1</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>Qe2</td>
+										<td>d5</td>
+									</tr>
+								</tbody>
+							</table>
+						</div> <!-- movearea -->
+				</div> <!-- Moving history -->
+				<div id="board-info" class="side-bar float-left"> <!-- Board Info -->
+					<div id="board-info-title" class="title-bar"><h2>thông tin bàn cờ</h2></div>
+					<div class="content-area">
+						<label for="board_fen" class="labela full-width">FEN: </label>
+						<input type="text" class="textboxa float-left" name="board_fen" value="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR" style="width:70%;margin-right:0.2em;" readonly>
+						<button id="copyFEN" class="buttonb float-left">Copy</button>
+						<label for="board_url" class="labela float-left full-width">Link bàn cờ: </label>
+						<input type="text" class="textboxa float-left" name="board_url" value="http://vietanhdev.com/hichess/" style="width:70%;margin-right:0.2em;" readonly>
+						<button id="copyURL" class="buttonb float-left">Copy</button>
+					</div>
+				</div> <!-- Board Info -->
+			</div> <!-- board-panel -->
+		</div> <!-- content of #left-area -->
+	</div> <!-- left of container -->
+	<div id="right-area" class="full-width floa-left">
+		<div class="side-bar float-left"> <!-- AI Settings -->
+			<div id="notify-title" class="title-bar"><h2>Chú ý!</h2></div>
+			<div class="content-area">
+				<p>Xin chào! Bạn đang chơi với máy tính của chúng tôi. Xem các bạn cờ đang mở, mời bạn bè cùng chơi ở khu vực bên dưới!.</p>
+				<!-- <button class="buttonc" value="Đổi AI">Thay đổi cấp độ AI</button> -->
+			</div>
+		</div> <!-- AI Settings -->
+		<div class="side-bar float-left"> <!-- Current Boards -->
+			<div class="title-bar"><h2>các bàn đang mở</h2></div>
+			<div class="content-area full-width">
+				<button id="game-list-expand" class="buttonb float-left">&lt; Mở rộng</button>	
+				<button id="game-filter" class="buttonb float-left">Lọc</button>	
+				<button id="game-choose-random" class="buttonb float-left">Tìm ngẫu nhiên</button>	
+				<table style="width:100%;">
+					<thead>
+						<th id="game-no">Bàn</th>
+						<th id="game-player">Kỳ thủ</th>
+						<th id="game-type">Loại cờ</th>
+						<th id="game-time">Thời gian</th>
+						<th id="game-piece-color">Màu quân</th>
+					</thead>
+				</table>
+				<div id="game-area">
+					<table id="game-list" class="full-width">
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Rich</td>
+							<td>Bình thường</td>
+							<td>3p+3s</td>
+							<td>Trắng</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Tom</td>
+							<td>Cờ chớp</td>
+							<td>Không g.hạn</td>
+							<td>Trắng</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Jerry</td>
+							<td>Cờ chớp</td>
+							<td>10p+1s</td>
+							<td>Đen</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Viet Anh</td>
+							<td>Chess360</td>
+							<td>15p+0s</td>
+							<td>Trắng</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Tommy</td>
+							<td>Chess360</td>
+							<td>3p+3s</td>
+							<td>Trắng</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>Jelly</td>
+							<td>Cờ chớp</td>
+							<td>15p+0s</td>
+							<td>Ngẫu nhiên</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>Piggy</td>
+							<td>Chess360</td>
+							<td>15p+0s</td>
+							<td>Ngẫu nhiên</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>Coldy</td>
+							<td>Bình thường</td>
+							<td>3p+3s</td>
+							<td>Ngẫu nhiên</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>Baby</td>
+							<td>Bình thường</td>
+							<td>15p+0s</td>
+							<td>Ngẫu nhiên</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>Manly</td>
+							<td>Cờ chớp</td>
+							<td>3p+3s</td>
+							<td>Ngẫu nhiên</td>
+						</tr>
+					</tbody>
+				</table>
+				</div> <!-- game-area -->
+				<div id="enter-a-board" style="margin:2em;" class="inputa">
+					<label for="chosen-game-no" class="labela">Vào bàn cờ số: </label>
+					<input type="number" class="textboxa float-left" name="chosen-game-no" style="width:10em;">
+				</div><!-- enter-a-board -->
+				<div id="player-find" style="margin:2em;">
+					<label for="player-find-name" class="labela">Tìm kỳ thủ: </label>
+					<input type="text" class="textboxa float-left" name="player-find-name" style="width:10em;">
+				</div><!-- player-find -->
+				<div class="create-new-board" style="margin-top:2em;">
+					<button class="buttonc full-width" value="Tạo bàn">Tạo bàn cờ trên hichess</button>
+					<button class="buttonc full-width" value="Chơi qua link">Chơi với bạn qua link</button>
+					<button class="buttonc full-width" value="Chơi qua Facebook">Mời bạn chơi qua Facebook</button>
+				</div><!-- create-new-board -->
+		</div> <!-- Current Boards -->
+	</div> <!-- right of container -->
+</div> <!-- End of Container -->
+
+<div style="clear:both;"></div>
+<footer>
+	<p>hichess v1.0 - Developer: Viet Anh (vietanhdev.com)</p>
+	<p>Lưu ý: Website này chỉ là giao diện trang chơi cờ online.</p>
+</footer>
+</body>
+</html>

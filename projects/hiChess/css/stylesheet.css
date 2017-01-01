@@ -1,0 +1,348 @@
+html {
+	background: url("../img/body.png");;
+}
+body {
+	margin: 0;
+}
+header {
+	padding: 0.2em;
+	background: #186dcd;
+	border-bottom: 5px solid #3399ff;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 1);
+}
+#logo {
+	height: 40px;
+}
+.container {
+	margin: 0.2em;
+}
+.side-bar {
+	width: 100%;
+	box-sizing: border-box;
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+#left-area {
+	padding: 0.2em;
+	box-sizing: border-box;
+	float: left;
+}
+#right-area {
+	margin-right: 0.2em;
+	padding: 0.2em;
+	box-sizing: border-box;
+	float: right;
+}
+
+#oppo-info {
+	height: 2em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	color: white;
+	font-weight: bold;
+	border-top: 5px solid #65e740;
+	border-radius: 5px;
+}
+#oppo-info span {
+	font: bold Arial, Helvetica, sans-serif;
+	position: relative; top:-1.8em; left: 0.2em;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+}
+#oppo1-name {
+	display: none;
+}
+#oppo2-name {
+	display: none;
+}
+.oppo {
+	position: relative; top:-1.2em;
+	display: inline-block;
+	height: 2.5em;
+	width: 2.5em;
+	background: #fff;
+	border: 2px solid #3399ff;
+	border-radius: 0.2em;
+	margin-left: 0.5em;
+	box-shadow: 4px 4px 4px #000000;
+}
+.title-bar {
+	margin-top: 0.2em;
+	padding: 0.5em;
+	box-sizing: border-box;
+	width: 100%;
+	border-top: 5px solid #65e740;
+	text-align: left;
+	background: #207ce5;
+}
+.title-bar h2 {
+	margin: 0;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	border: none;
+	font: normal 1em/1 Arial, Helvetica, sans-serif;
+	color: rgba(250,250,250,1);
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	text-shadow: 5px 5px 40px rgba(250,250,250,0.91) ;
+}
+.content-area {
+	margin-bottom: .2em;
+	padding: 0.5em;
+	border: .2em;
+	position: relative;
+	display:block;
+	overflow:auto;
+	padding: .2em;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #f2f2f2;
+	box-shadow: 0 1px 3px 0 rgba(119,119,119,.4),inset 0 0 30px 0 rgba(153,153,153,.2);
+	border: 1px solid #fff;
+}
+.content-area p {
+	font: 20px Sans-serif bold;
+}
+#board-area-wrapper {
+	width: 100%;
+	clear: both;
+}
+#chessboard-wrapper {
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 100%;
+	margin-bottom:.2em;
+	height: 0;
+}
+#chessboard {
+	table-layout: fixed;
+	border:3px solid #8c8c8c;
+	border-radius: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: rgba(30,30,30,1);
+	text-align: center;
+	text-transform: normal;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	white-space: pre;
+	text-shadow: 2px 1.5px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,0.67);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#chessboard td {
+	box-sizing: border-box;
+	border-collapse: collapse;
+	overflow:hidden;
+	font:1.2em "Segoe UI Symbol", "MS Gothic","DejaVu Sans"; /*Chess Fonts*/
+	background:url(../img/woodlight.png);
+	text-align: center;
+	width:12.5%;
+	height:12.5%;
+	cursor:pointer;
+	padding: .1em;
+}
+#chessboard td[lang='0'] {
+	outline:4px solid #ff4d4d;
+}
+#chessboard tr:nth-child(odd) td:nth-child(even), #chessboard tr:nth-child(even) td:nth-child(odd) { 
+	/*background: rgba(0,100,150,0.5);*/
+	background:url(../img/wooddark.png);
+}
+
+#chess-clock-title, #game-control-title, #history-title, #board-info-title, #notify-title, #chatbox-title {
+	display: none;
+}
+
+@media all and (min-width: 360px) {
+	#chessboard td  { font-size:1.4em;}
+	#oppo1-name {display: inline;}
+	#oppo2-name {display: inline;}
+}
+@media all and (min-width: 600px) {
+	#chessboard td  { font-size:2.2em;}
+	#chess-clock-title, #game-control-title, #history-title, #board-info-title, #notify-title, #chatbox-title {display: block;}
+}
+@media all and (min-width: 768px) {
+	#chessboard td  { font-size:2.4em;}
+	#board-area-wrapper {clear: none; width: 70%; float: right;}
+	#board-panel {clear: none; width: 29.5%; float: left;}
+}
+@media all and (min-width: 980px) {
+	#chessboard td  { font-size:2.2em;}
+	#right-area { width:29.5%; clear: none;}
+	#left-area { width:70%; clear: none;}
+}
+@media all and (min-width: 1024px) {
+	.content-area {padding: 0.5em;}
+	.title-bar {padding: 0.5em;}
+}
+@media all and (min-width: 1280px) {
+	#chessboard td  { font-size:3em;}
+	.container {margin: 0.5em;}
+}
+
+
+
+
+footer {
+	border-top: 2px solid rgba(100,100,100,1);
+	margin-top: 30px;
+	padding-bottom:3em; 
+	padding: 5px;
+	background: linear-gradient(to bottom,#2f6bb0,#004a9e 100%);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 1);
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: .8em;
+	color: #f9f9f9;
+}
+
+
+/*GUI CONTROLS*/
+.full-width {
+	width: 100%;
+	clear:both;
+}
+.textboxa {
+	box-sizing: border-box;
+	height: 2em;
+	float: left;
+	border: 1px solid #CCD4D8;
+	border-radius: 5px;
+}
+
+.buttontop {
+	margin-top: 10px;
+	margin-right: 10px;
+	float: right;
+	height: 30px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+.buttonb {
+	font-family: Arial;
+	font-size: 1em;
+	text-decoration: none;
+	border: 2px solid #fff;
+    background-color: #207ce5;
+    color: white;
+}
+.buttonb:hover {
+	background-color: white;
+	border: 2px solid #207ce5;
+	color: #207ce5;;
+}
+
+.buttonc {
+	margin-top:0.2em;
+	font-family: Arial;
+	font-size: 1.2em;
+	padding: 0.2em;
+	text-decoration: none;
+	background-color: white;
+	border: 2px solid #207ce5;
+	color: #207ce5;
+}
+.buttonc:hover {
+	border: 2px solid #fff;
+    background-color: #207ce5;
+    color: #fff;
+}
+
+.labela {
+    padding: 0.2em;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
+/*Chat Box*/
+#chatbox {
+	width: 100%;
+	height: 5em;
+	border: 2px solid #CCD4D8;
+	text-overflow: auto;
+}
+#message {
+	margin-top: 0.2em;
+	padding: 0.2em;
+	box-sizing: border-box;
+	width: 80%; height: 3em;
+	float: left;
+	border: 2px solid #CCD4D8;
+}
+#send-chat {
+	box-sizing: border-box;
+	width: 20%;
+	float: left;
+	border-radius:0;
+}
+/*End of Chat Box*/
+
+#time-board td {border: 2px solid #CCD4D8;}
+#time-board td:first-child {background-color: #f9f9f9;}
+#time-board td:nth-child(2) {background-color: #bababa;}
+#time-board td p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	margin:0;
+	text-align: center;
+	color:#616161;
+	text-shadow:#e0e0e0 1px 1px 0;
+}
+#move-area {overflow: auto; height: 10em; padding: 0;}
+#move-table td { 
+	height: 2em;
+	padding: 0.2em;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+#move-table td:first-child{background-color: #f2f2f2}
+#move-table td:nth-child(2){background-color: #fff}
+#move-table td:nth-child(3){background-color: #999}
+
+#game-area {overflow: auto; height: 10em; padding: 0;}
+#game-list td { 
+	height: 2em;
+	padding: 0.2em;
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+#game-list td:nth-child(odd){background-color: #f9f9f9}
+#game-list td:nth-child(even){background-color: #fff}
+
+#settings {
+	background-color: #fff;
+	border: 4px solid #fff;
+	border-radius: 50%;
+	height: 30px;
+	margin-top:4px;
+}
+#register {
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #f44336;
+	border: 2px solid #fff;
+	color: #fff;
+}
+#login {
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #548FEC;
+	border: 2px solid #fff;
+	color: #fff;
+}

@@ -1,0 +1,30 @@
+---
+layout: page
+title: "Contact Page"
+subtitle: Send me a message via this page
+js: "/js/contact-page.js"
+---
+
+<style>
+	#contact-form input, #contact-form textarea,#contact-form button {
+	width: 100%;
+	clear: both;
+	}
+	#contact-form input, #contact-form textarea {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	#contact-form textarea {
+		height: 200px;
+	}
+</style>
+
+<h3>Bạn có thể gửi cho tôi một tin nhắn qua form bên dưới:</h3>
+
+<form id="contact-form" method="POST" action="https://formspree.io/contactform@vietanhdev.com">
+  <input type="text" name="_gotcha" style="display:none" />
+  <input type="email" class="form-control input-lg" name="email" placeholder="Email">
+  <input type="text" class="form-control input-lg" name="website" placeholder="Your name / Tên bạn">
+  <textarea class="form-control input-lg" row="3" name="message" placeholder="Message / Nội dung tin nhắn"></textarea>
+  <input type="submit" class="btn btn-lg btn-primary" value="Send / Gửi đi"></input>
+</form>
