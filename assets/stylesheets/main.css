@@ -26,6 +26,11 @@ img {
 input, textarea {
     padding: 10px;
 }
+button, input[type="submit"] {
+    background: rgb(230, 230, 230);
+    border: 1px solid gray;
+    border-radius: 5px;
+}
 
 footer {
     margin-top: 50px;

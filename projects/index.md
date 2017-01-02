@@ -4,9 +4,11 @@ title: "My Projects"
 subtitle: Some work I've done
 ---
 <style>
+	.row {
+		width: 100%;
+	}
 	.project {
-		width: 350px;
-		height: 450px;
+		width: 100%;
 		overflow: auto;
 		float: left;
 		border: 2px solid grey;
@@ -27,6 +29,18 @@ subtitle: Some work I've done
 		border: 1px solid grey;
 		padding: 2px;
 	}
+	@media all and (min-width: 600px) {
+		.project {
+			width: 45%;
+		}
+	}
+	@media all and (min-width: 1024px) {
+		.project {
+			width: 300px;
+			height: 450px;
+		}
+	}
+
 </style>
 <div class="row">
 	<div class="project">
@@ -59,8 +73,6 @@ subtitle: Some work I've done
 			<p><a href="https://vietanhdev.com/projects/hiChess/" class="btn btn-primary" role="button">Demo</a></p>
 		</div>
 	</div>
-</div>
-<div class="row">
 	<div class="project">
 		<div class="thumbnail">
 			<img src="https://raw.githubusercontent.com/vietanhdev/minesweeper-in-c/master/screenshot.png" alt="Minesweeper dò mìn">
@@ -91,8 +103,6 @@ subtitle: Some work I've done
 			<p><a href="https://github.com/vietanhdev/line98" class="btn btn-primary" role="button">Download &amp; Source code</a></p>
 		</div>
 	</div>
-</div>
-<div class="row">
 	<div class="project">
 		<div class="thumbnail">
 			<img src="https://github.com/vietanhdev/tic-tac-toe/raw/master/screenshot.jpg" alt="Tic Tac Toe">
