@@ -11,12 +11,12 @@ ext-js:
 ---
 <!DOCTYPE html>
 <html>
-    {% include head/head.html %}
+    {% include html_includes/head/head.html %}
     <body>
-        {% include head/topbar.html %}
+        {% include html_includes/head/topbar.html %}
         {{ content }}
-        {% include foot/footer.html %}
-        {% include return-to-top.html %}
+        {% include html_includes/foot/footer.html %}
+        {% include html_includes/return-to-top.html %}
     </body>
-    {% include foot/scripts.html %}
+    {% include html_includes/foot/scripts.html %}
 </html>

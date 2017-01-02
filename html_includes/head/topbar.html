@@ -1,0 +1,39 @@
+<nav id="top-bar">
+    <div id="dropdown-wrapper">
+         <i id="dropdown-btn" class="fa fa-bars fa-2x" aria-hidden="true"></i>
+         <div id="dropdown-menu">
+            <div id="search-wrapper">
+                <input id="search-box" type="text" name="search" placeholder="type & enter to search">
+            </div>
+            <div class="vline"></div>
+            <div class="menu">
+                <a class="menu-item" href="{{ site.url }}{{ site.baseurl }}/">
+                <i class="fa fa-home" aria-hidden="true"></i>&nbsp;
+                    Home
+                </a>
+                <a class="menu-item" href="{{ site.url }}{{ site.baseurl }}/blog/">
+                    <i class="fa fa-wordpress" aria-hidden="true"></i>&nbsp;
+                    My Posts
+                </a>
+                <a class="menu-item" href="{{ site.url }}{{ site.baseurl }}/projects/">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;
+                    My Projects
+                </a>
+                <a class="menu-item" href="{{ site.url }}{{ site.baseurl }}/contact.html">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;
+                    Contact me
+                </a>
+            </div>
+            <div class="vline"></div>
+            <div id="theme-selector">
+                 <span style="vertical-align:middle;">Light theme&nbsp;</span>
+                <label style="vertical-align:middle;" class="switch">
+                    <input id="theme-select" type="checkbox">
+                    <div class="slider round"></div>
+                </label>
+                <span style="vertical-align:middle;">&nbsp;Dark theme</span>
+            </div>
+         </div>
+    </div>
+    <div id="site-title"><a href="{{ site.url }}{{ site.baseurl }}"> {{ site.title }} </a></div> 
+</nav>

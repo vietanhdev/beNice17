@@ -1,6 +1,11 @@
-@import "normalize.css";
-@import "topbar.css";
-@import "highlight.css"; /* For code highlighting */
+---
+layout: null
+---
+
+{% include assets/stylesheets/normalize.css %}
+{% include assets/stylesheets/topbar.css %}
+{% include assets/stylesheets/topbar-menu.css %}
+{% include assets/stylesheets/highlight.css %} /* For code highlighting */
 
 /*Set some default styles*/
 body {

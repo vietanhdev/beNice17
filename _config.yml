@@ -18,9 +18,10 @@ email: beNice17@vietanhdev.com
 author: Viet Anh Nguyen
 description: > # this means to ignore newlines until "baseurl:"
   A minimal theme for personal website
-url: "http://vietanhdev.com" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/beNice17" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
 
+includes_dir: .
 
 menu:
   Home:
