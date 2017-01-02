@@ -2,78 +2,59 @@
 layout: page
 title: Search
 subtitle: "Search for posts I've written"
-js:
-   - "/search/lunr.min.js"
-   - "/search/search.js"
+ext-js:
+   - "lunr.min.js"
+   - "search.js"
 ---
 
 <br/>&nbsp;
 
 <div class="container">
-<form action="get" id="site_search">
-        <div class="col-md-8">
-            <div id="custom-search-input">
-                <div class="input-group col-md-12">
-                    <input id="search_box" type="text" class="form-control input-lg" placeholder="type here and enter" />
-                    <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg" type="submit">
-                            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
-                        </button>
-                    </span>
-                </div>
-            </div>
-
-            <ul id="search_results"></ul>
+    <form action="get" id="site_search">
+        <div class="input-group">
+            <input id="search_box" type="text" placeholder="type here and enter" />
+            <button type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
         </div>
-</form>
+        <ul id="search_results"></ul>
+    </form>
 </div>
 
 &nbsp;
 
 
 <style type="text/css">
+
+#site_search {
+    width: 800px;
+    margin: 0 auto;
+}
 	
-#custom-search-input{
-    padding: 3px;
-    border: solid 1px #E4E4E4;
+#input-group{
     border-radius: 6px;
     background-color: #fff;
 }
 
-#custom-search-input input{
-    border: 0;
+#search_box{
+    width: 600px;
+    border: solid 1px #E4E4E4;
     box-shadow: none;
 }
 
-#custom-search-input button{
-    margin: 2px 0 0 0;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: #666666;
-    padding: 0 8px 0 10px;
-    border-left: solid 1px #ccc;
-}
-
-#custom-search-input button:hover{
-    border: 0;
-    box-shadow: none;
-    border-left: solid 1px #ccc;
-}
-
-#custom-search-input .glyphicon-search{
-    font-size: 23px;
+.input-group button{
+    width: 150px;
+    color: gray;
 }
 
 #search_results {
 	margin-top: 10px;
-	list-style: none;
-	background: rgba(0,0,0,0.4);
+	background: rgba(0,0,0,0.6);
 	border-radius: 5px;
 }
 #search_results, #search_results a {
 	color: #fff;
-	line-height: 1.8em;
+	line-height: 2;
 	font-weight: bold;
 }
 </style>

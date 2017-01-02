@@ -13,11 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: beNice17 theme
-email: beNice17@vietanhdev.com
+title: Viet Anh's Website
+email: vietanh@vietanhdev.com
 author: Viet Anh Nguyen
 description: > # this means to ignore newlines until "baseurl:"
-  A minimal theme for personal website
+  Viet Anh Nguyen's Website -  Where I share with the world about my life and my works.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 

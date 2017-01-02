@@ -3,7 +3,9 @@
          <i id="dropdown-btn" class="fa fa-bars fa-2x" aria-hidden="true"></i>
          <div id="dropdown-menu">
             <div id="search-wrapper">
-                <input id="search-box" type="text" name="search" placeholder="type & enter to search">
+                <form method="GET" action="{{ site.url }}{{ site.baseurl }}/search/">
+                    <input id="search-box" type="text" name="keyword" placeholder="type & enter to search">
+                </form>
             </div>
             <div class="vline"></div>
             <div class="menu">
@@ -26,7 +28,7 @@
             </div>
             <div class="vline"></div>
             <div id="theme-selector">
-                 <span style="vertical-align:middle;">Light theme&nbsp;</span>
+                <span style="vertical-align:middle;">Light theme&nbsp;</span>
                 <label style="vertical-align:middle;" class="switch">
                     <input id="theme-select" type="checkbox">
                     <div class="slider round"></div>

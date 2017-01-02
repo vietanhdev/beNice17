@@ -23,7 +23,7 @@ a {
 img {
     max-width: 100%;
 }
-input, textarea {
+input, textarea, button {
     padding: 10px;
 }
 button, input[type="submit"] {
