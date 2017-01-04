@@ -12,8 +12,8 @@ contact-email: beNice17@vietanhdev.com # Email for contact page. Can be your ema
 author: Viet Anh Nguyen
 description: > # this means to ignore newlines until "baseurl:"
   beNice17 is a Jekyll theme. Suitable for personal Websites & Blogs.
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://vietanhdev.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/beNice17" # the subpath of your site, e.g. /blog
 
 includes_dir: .
 
