@@ -113,7 +113,7 @@ switch (<biểu thức nguyên>) {
 }
 ~~~
 
-• Khi một cấu trúc rẽ nhánh switch được thực thi, chương trình sẽ tính toán giá trị của biểu thức. Kết quả thu được phải là kiểu nguyên (ta có thể ép kiểu cho nó. Xem [Toán tử trong C](/ngon-ngu-c/toan-tu-trong-c/) để biết cách ép kiểu). Tiếp đó nó so sánh kết quả thu được với các giá trị 1,2… , khi tìm thấy một giá trị bằng với kết quả thu được ở trên, nó thực hiện cách lệnh từ sau dấu : tương ứng cho tới cuối cấu trúc switch hoặc tới khi bắt gặp lệnh break;
+• Khi một cấu trúc rẽ nhánh switch được thực thi, chương trình sẽ tính toán giá trị của biểu thức. Kết quả thu được phải là kiểu nguyên (ta có thể ép kiểu cho nó. Xem [Toán tử trong C]({{ site.url }}{{ site.baseurl }}/ngon-ngu-c/toan-tu-trong-c/) để biết cách ép kiểu). Tiếp đó nó so sánh kết quả thu được với các giá trị 1,2… , khi tìm thấy một giá trị bằng với kết quả thu được ở trên, nó thực hiện cách lệnh từ sau dấu : tương ứng cho tới cuối cấu trúc switch hoặc tới khi bắt gặp lệnh break;
  • Trường hợp không tìm thấy giá trị nào bằng với giá trị biểu thức, <hành động mặc định> được thực hiện.
 
 **Ví dụ về chương trình in ra cách đọc của một chữ số: (từ 0 -> 9)**

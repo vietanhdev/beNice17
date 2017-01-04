@@ -32,4 +32,4 @@ Các bạn hãy Copy toàn bộ các dòng code trên, paste vào Geany và lưu
 
 Tiếp đó chọn menu **Build > Build (F9)** để biên dịch. Và **Build > Excute (F5)** để chạy chương trình đã biên dịch nhé.
 
-![Biên dịch chương trình C](/assets/images/ngon-ngu-c/bien-dich-Hello-world-c.png)
+![Biên dịch chương trình C]({{ site.url }}{{ site.baseurl }}/assets/images/ngon-ngu-c/bien-dich-Hello-world-c.png)

@@ -1,42 +1,21 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Welcome to beNice17 - A Simple Jekyll theme by Viet Anh Nguyen
+# Website: vietanhdev.com
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Viet Anh's Website
-email: vietanh@vietanhdev.com
+title: beNice17 theme # Title of your Website. Eg: Viet Anh's Website
+email: beNice17@vietanhdev.com # Your email
+contact-email: beNice17@vietanhdev.com # Email for contact page. Can be your email.
 author: Viet Anh Nguyen
 description: > # this means to ignore newlines until "baseurl:"
-  Viet Anh Nguyen's Website -  Where I share with the world about my life and my works.
+  beNice17 is a Jekyll theme. Suitable for personal Websites & Blogs.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
 includes_dir: .
-
-menu:
-  Home:
-    link: /
-    icon: "fa-home"
-  My Blog:
-    link: blog/
-    icon: "fa-wordpress"
-  My Projects:
-    link: projects/
-    icon: "fa-briefcase"
-  Contact:
-    link: contact/
-    icon: "fa-info-circle"
-
 
 # Sharing settings
 shareimg: https://vietanhdev.com/beNice17/assets/images/sharing-imgs/beNice17.jpg # default sharing img

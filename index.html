@@ -4,13 +4,7 @@ js:
   - "assets/scripts/typed.min.js"
   - "assets/scripts/homepage.js"
 ---
-
-<div class='text-editor-wrap'>
-    <div class='title-bar'><span class='title'>vietanh@Xmachine</span>
-    </div>
-    <div class='text-body'>$ <span id='typed'></span>
-    </div>
-</div>
+<img src="assets/images/homepage.png" alt="Homepage icon" style="margin: 0 auto; display: block">
 
 <div class="hello-world">
 
@@ -18,7 +12,6 @@ js:
 	<img src="assets/images/language-flags/vn.png" style="float: right;" onclick="$('*[verlang=en]').hide(); $('*[verlang=vi]').show();">
 
 	<br>
-
 
 	<h2 verlang="en">Hi!</h2>
 	<p verlang="en">I'm Viet Anh. I'm a student, I love programming and have passion for technology. I am currently focusing on developing and managing Websites and Web applications.</p>
@@ -46,113 +39,3 @@ js:
 {% for post in site.posts limit:5 %}  
     <p>&gt;&gt; <span style="font-size: 18px; font-weight: bold;"><a href="{{ post.url }}">{{ post.title }}</a></span></p>
 {% endfor %}
-
-<!-- For the animated blinking cursor typed.js -->
-<style type="text/css">
-
-/* text editor styles */
-.text-editor-wrap {
-  display: block;
-  margin: 50px auto;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 30px;
-  clear: both;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
-
-.title-bar {
-  padding: 10px 0;
-  font-family: "Lucida Grande", sans-serif;
-  font-size: 1em;
-  text-align: center;
-  text-shadow: rgba(255, 255, 255, 0.8) 0px 1px 0px;
-  color: #2C3E50;
-  background-color: #f8f8f8;
-  background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
-  background-image: -moz-linear-gradient(top, #e8e8e8, #bcbbbc);
-  background-image: linear-gradient(top, #e8e8e8, #bcbbbc);
-  box-shadow: inset rgba(255, 255, 255, 0.7) 0px 1px 1px;
-  border-bottom: #6a6a6a 1px solid;
-}
-
-.text-body {
-  height: 200px;
-  padding: 10px;
-  color: #f0f0f0;
-  text-shadow: #000 0px 1px 0px;
-  font-family: "Consolas", "Courier New", "Courier";
-  font-size: 1.6em;
-  line-height: 1.2em;
-  font-weight: 500;
-  text-align: left;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  background: rgba(0, 0, 0, 0.6);
-  /*background: #A9ABAA url("/files/background/vietanhdev.png") right bottom no-repeat;*/
-}
-
-.typed-cursor {
-  opacity: 1;
-  font-weight: 100;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  -ms-animation: blink 0.7s infinite;
-  -o-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-
-@-keyframes blink {
-  0% {
-    opacity: 1; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-@-moz-keyframes blink {
-  0% {
-    opacity: 1; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-@-ms-keyframes blink {
-  0% {
-    opacity: 1; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-@-o-keyframes blink {
-  0% {
-    opacity: 1; }
-
-  50% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-</style>
