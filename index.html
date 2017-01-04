@@ -38,5 +38,5 @@ meta-description: "beNice17 is a Jekyll theme. Suitable for personal Websites & 
 <h2>Lastest posts on my blog</h2>
 
 {% for post in site.posts limit:5 %}  
-    <p>&gt;&gt; <span style="font-size: 18px; font-weight: bold;"><a href="{{ post.url }}">{{ post.title }}</a></span></p>
+    <p>&gt;&gt; <span style="font-size: 18px; font-weight: bold;"><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span></p>
 {% endfor %}
