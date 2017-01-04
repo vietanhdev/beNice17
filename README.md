@@ -1,6 +1,8 @@
 # beNice17
 A very light, simple and responsive jekyll theme. Suitable for personal websites and blogs.
 
+## Demo: https://vietanhdev.com/beNice17/
+
 ## To use this theme
 - Fork this theme to your Github account.
 - Rename the repository. (Eg: If your Github username is vietanhdev, rename the repository to vietanhdev.github.io).
