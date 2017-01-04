@@ -20,7 +20,5 @@
   {% endif %}
 
   {% if page.shareimg %}
-  <meta name="twitter:image" content="{{ page.shareimg }}" />
-  {% elsif site.avatar %}
-  <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/{{ page.shareimg }}" />
   {% endif %}
