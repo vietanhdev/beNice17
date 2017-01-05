@@ -16,6 +16,9 @@ $.fn.descendantOf = function(element) {
     }
 }
 
+// Hide menu for nojs-browser
+$('.menu-nojs').hide();
+
 // Asyn load images
 document.write('<img style="display: none" src="{{ site.url }}{{ site.baseurl }}/assets/images/patterns/dark-fabric.png">');
 document.write('<img style="display: none" src="{{ site.url }}{{ site.baseurl }}/assets/images/patterns/dark-fabric.png">');
@@ -53,8 +56,8 @@ $(document).ready(function(){
     });
     $(document).click(function(e) {
         if (!$(e.target).descendantOf("#dropdown-wrapper")) {
-            $("#dropdown-menu").fadeOut(100);      
+            $("#dropdown-menu").fadeOut(100);
         }
     });
-    
+
 });

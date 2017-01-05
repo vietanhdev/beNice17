@@ -20,5 +20,8 @@
             </div>
          </div>
     </div>
-    <div id="site-title"><a href="{{ site.url }}{{ site.baseurl }}"> {{ site.title }} </a></div> 
+    <div class="menu-nojs">
+      {% include html_includes/head/topbar-menu.html %}
+    </div>
+    <div id="site-title"><a href="{{ site.url }}{{ site.baseurl }}/"> {{ site.title }} </a></div>
 </nav>

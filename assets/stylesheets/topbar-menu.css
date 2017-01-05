@@ -6,7 +6,7 @@
     color: gray;
     padding-left: 10px;
 }
-#dropdown-menu {
+#dropdown-wrapper #dropdown-menu {
     z-index: 999;
     min-width: 320px;
     display: none;
@@ -81,17 +81,25 @@ input:checked + .slider:before {
 }
 
 /*Menu*/
-#top-bar .menu-item {
+#dropdown-menu .menu-item {
   display: block;
   padding-left: 40px;
 }
-#top-bar .menu-item:hover {
+#dropdown-menu .menu-item:hover {
   background: rgba(0,0,0,0.1);
+}
+
+/* Menu for broswers without javascript */
+.menu-nojs .menu {
+  float: left;
+}
+.menu-nojs .menu-item {
+  padding-left: 40px;
 }
 
 /*Search Box*/
 #search-wrapper {
-  margin-top: 12px; 
+  margin-top: 12px;
   width: 100%;
   box-sizing: border-box;
 }
