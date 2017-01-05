@@ -25,7 +25,7 @@ Vậy là mở Emacs lên sử dụng thôi (Lưu ý là lần đầu mở lại
 
 `emacs&`
 
-![Emacs](/assets/images/ngon-ngu-c/emacs.png)
+![Emacs]({{ site.url }}{{ site.baseurl }}/assets/images/ngon-ngu-c/emacs.png)
 
 Vừa mở lên C-x C-f tạo file mới (file mã nguồn ngôn ngữ C có đuôi .c nhé), ae thấy ngay cái file browser ngon hơn cái mặc định rồi.
 
