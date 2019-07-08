@@ -29,7 +29,7 @@ Giả sử khai báo: `int A=5, B=6; float C=1.2;`
 | `-` | Trừ 2 toán hạng  | A - B sẽ cho kết quả là -1 |
 | `*` | Nhân 2 toán hạng | A \* B sẽ cho kết quả là 30 |
 | `/` | Chia 2 toán hạng | B / A sẽ cho kết quả là 0 (2 toán hạng đều là số nguyên  thì kết quả là phần nguyên của thương) A / C sẽ cho kết quả là 4.166667 (1 trong 2 toán hạng là số thực dấu phẩy động thì thương là số thực dấu phẩy động) |
-| `%` | Chia lấy phần dư | B % A sẽ cho kết quả là 5 |
+| `%` | Chia lấy phần dư | B % A sẽ cho kết quả là 1 |
 
 ## Toán tử so sánh(quan hệ): Trả về giá trị là true (đúng) hoặc false (sai)
 
