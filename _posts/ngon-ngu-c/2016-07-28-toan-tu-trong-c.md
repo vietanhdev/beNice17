@@ -4,6 +4,8 @@ title:  "Toán tử trong C"
 date:   2016-07-28
 categories: [Ngôn ngữ C]
 tags: [ngôn ngữ c, toán tử]
+redirect_to:
+  - https://aicurious.io/posts/2016-07-28-toan-tu-trong-c/
 ---
 
 **Định nghĩa toán tử trong [Wikipedia]:**

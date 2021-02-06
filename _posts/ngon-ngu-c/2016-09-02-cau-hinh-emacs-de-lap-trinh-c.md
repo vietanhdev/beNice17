@@ -5,6 +5,8 @@ date:   2016-09-02
 categories: [Ngôn ngữ C, Emacs]
 tags: [ngôn ngữ c, Emacs, editor]
 bigimg: images/ngon-ngu-c/shareimg.jpg
+redirect_to:
+  - https://aicurious.io/posts/cau-hinh-emacs-de-lap-trinh-c/
 ---
 
 Link hướng dẫn cài đặt và sử dụng các chức năng: [http://tuhdo.github.io/c-ide.html](http://tuhdo.github.io/c-ide.html)

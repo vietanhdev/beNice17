@@ -4,6 +4,8 @@ title:  "Cài đặt Geany – gcc làm môi trường soạn thảo và biên d
 date:   2016-07-27
 categories: [Ngôn ngữ C]
 tags: [ngôn ngữ c, geany, editor]
+redirect_to:
+  - https://aicurious.io/posts/geany-gcc-bien-dich-c-tren-linux-ubuntu/
 ---
 
 Trong bài viết này Việt Anh sẽ hướng dẫn các bạn cài Geany và gcc  để soạn thảo và biên dịch chương trình viết bằng ngôn ngữ C trên Linux (cụ thể ở đây là hệ điều hành Ubuntu).
@@ -12,7 +14,7 @@ Trong bài viết này Việt Anh sẽ hướng dẫn các bạn cài Geany và 
 
 Mở Terminal (Ctrl + Alt +t) và gõ lần lượt các lệnh sau để cài đặt trình soạn thảo mã nguồn Geany:
 
-~~~sh
+~~~shell
 sudo apt-get update
 sudo apt-get install geany
 ~~~
@@ -21,7 +23,7 @@ sudo apt-get install geany
 
 Gõ lệnh sau để cài đặt gói build-essential:
 
-~~~sh
+~~~shell
 sudo apt-get install build-essential
 ~~~
 
