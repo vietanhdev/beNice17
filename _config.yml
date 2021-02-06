@@ -29,6 +29,7 @@ permalink: posts/:title.html
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock
