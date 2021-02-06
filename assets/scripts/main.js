@@ -44,7 +44,7 @@ $(document).ready(function(){
             $('body').css("background", "url({{ site.url }}{{ site.baseurl }}/assets/images/patterns/dark-fabric.png)");
             sessionStorage.theme = "dark";
         } else {
-            $('body').css("background", "url({{ site.url }}{{ site.baseurl }}/assets/images/patterns/seigaiha.png)");
+            $('body').css("background", "#fafafa");
             sessionStorage.theme = "light";
         }
     });
