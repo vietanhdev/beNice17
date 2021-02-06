@@ -4,6 +4,8 @@ title:  "Cấu trúc rẽ nhánh trong C"
 date:   2016-07-29
 categories: [Ngôn ngữ C]
 tags: [ngôn ngữ c, rẽ nhánh]
+redirect_to:
+  - https://aicurious.io/posts/cau-truc-re-nhanh/
 ---
 
 Cấu trúc rẽ nhánh trong mỗi ngôn ngữ lập trình luôn luôn là một thành phần quan trọng. Đó là thành phần cơ bản tạo nên hầu hết các thuật toán hiện đại. Nếu bạn muốn mô tả một đoạn chương trình kiểu như: *Nếu gặp điều kiện C thì thực hiện hành động A, ngược lại, thực hiện hành động B* thì bạn chắc chắn cần sử dụng cấu trúc rẽ nhánh.

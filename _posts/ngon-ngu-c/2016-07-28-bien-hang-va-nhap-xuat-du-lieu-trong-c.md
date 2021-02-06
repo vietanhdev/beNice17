@@ -4,6 +4,8 @@ title:  "Biến, hằng và nhập xuất dữ liệu trong C"
 date: 2016-07-28
 categories: [Ngôn ngữ C]
 tags: [ngôn ngữ c, biến hằng, nhập xuất]
+redirect_to:
+  - https://aicurious.io/posts/bien-hang-va-nhap-xuat-du-lieu-trong-c/
 ---
 
 ### 1. Biến, hằng:

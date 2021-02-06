@@ -13,7 +13,7 @@ tags: [ngôn ngữ c, Sublime Text, editor]
 ## 2. Tiếp đó cài đặt gcc để biên dịch ngôn ngữ c:
 Mở **Terminal** (Ctrl + Alt +t) và gõ lần lượt các lệnh sau để cài đặt gói **build-essential**:
 
-~~~sh
+~~~shell
 sudo apt-get update
 sudo apt-get install build-essential
 ~~~
